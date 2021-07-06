@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>ИСР 1.2</title><meta charset="utf-8">
+ </head>
+ <body>
+  <article>
+    <h1>ИСР Тема 1. Проектирование CRUD для серверного веб-приложения</h1>
+	<div style="font-size:110%;">
+	<a href="" target="_blank">Ссылка на папку с файлами</a><br><br>
+	Реализован REST API для выполнения операций CRUD в базе данных MongoDB.<br>
+    Приложение реализовано с использованием Express, bodyParser, Mongoose.<br><br>
+	Реализованы следующие операции:<br>
+	<ul>
+	  <li><code>GET /products</code> - получение списка продуктов</li>
+	  <li><code>POST /products/new</code> - добавление нового продукта</li>
+	  <li><code>POST /products/update/:id</code> - обновление информации о продукте по ID</li>
+	  <li><code>POST /products/delete/:id</code> - удаление информации о продукте по ID</li>
+	</ul>
+	При отправке запросов для добавления и обновления продукта информация о нём передаётся в теле POST-запроса.<br>
+    Сервер возвращает ответ - статус выполнения операции в формате JSON. Пример ответа сервера (добавление данных):
+	<pre style="background-color:rgb(240, 240, 240); font-size:120%;"><code>
+    {
+	  "status": "success"
+    }
+	</code></pre>
+	Пример ответа сервера на GET-запрос:
+	<pre style="background-color:rgb(240, 240, 240); font-size:120%;"><code>
+  [
+    {
+      "amount": {
+        "number": 32,
+        "unit": "kg"
+      },
+      "_id": "60e4268f46a5bd73485414f0",
+      "name": "Apples",
+      "type": "Fruits"
+    },
+    {
+      "amount": {
+        "number": 16.25,
+        "unit": "kg"
+      },
+      "_id": "60e42ad546a5bd73485414f1",
+      "name": "Bananas",
+      "type": "Fruits"
+    },
+    {
+      "amount": {
+        "number": 24.5,
+        "unit": "kg"
+      },
+      "_id": "60e42b1046a5bd73485414f2",
+      "name": "Strawberries",
+      "type": "Berries"
+    }
+  ]
+	</code></pre>
+	</div>
+  </article>
+ </body>
+</html>

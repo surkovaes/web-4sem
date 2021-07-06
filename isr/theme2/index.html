@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>ИСР 2.1</title><meta charset="utf-8">
+ </head>
+ <body>
+  <article>
+    <h1>ИСР Тема 2. Проектирование приложения на основе фреймворка Symphony</h1>
+	<div style="font-size:110%;">
+	<a href="" target="_blank">Ссылка на папку с файлами</a><br><br>
+	Приложение реализует API для выполнения арифметических операций.<br><br>
+    Маршруты описаны в файле <code>routes.yaml</code><br><br>
+	Контроллер реализован в файле <code>CalcController.php</code><br><br>
+	Ответ сервера при выполнении запроса по маршруту <code>/calc/add/2/3</code>:
+	<pre style="background-color:rgb(240, 240, 240); font-size:120%;"><code>
+    {
+      "result": 5
+    }
+	</code></pre>
+	Ответ сервера при выполнении запроса по маршруту <code>/calc/substract/5/7</code>:
+	<pre style="background-color:rgb(240, 240, 240); font-size:120%;"><code>
+    {
+      "result": -2
+    }
+	</code></pre>
+	Ответ сервера при выполнении запроса по маршруту <code>/calc/multiply/7/5</code>:
+	<pre style="background-color:rgb(240, 240, 240); font-size:120%;"><code>
+    {
+      "result": 35
+    }
+	</code></pre>
+	Ответ сервера при выполнении запроса по маршруту <code>/calc/divide/5/7</code>:
+	<pre style="background-color:rgb(240, 240, 240); font-size:120%;"><code>
+    {
+      "result": 0.7142857142857143
+    }
+	</code></pre>
+	</div>
+  </article>
+ </body>
+</html>

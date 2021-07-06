@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>ИСР 4.2</title><meta charset="utf-8">
+ </head>
+ <body>
+  <article>
+    <h1>ИСР Тема 4. Подготовка виртуального сервера или деплой-платформы для публикации веб-ресурса на основе Ghost.js</h1>
+	<div style="font-size:110%;">
+	Ghost.js можно установить с помощью Docker-контейнера.<br><br>
+    Для установки контейнера необходимо выполнить команду:
+	<pre style="background-color:rgb(240, 240, 240); font-size:120%;"><code>
+    docker pull ghost
+	</code></pre>
+	Для запуска Ghost необходимо выполнить команду:
+	<pre style="background-color:rgb(240, 240, 240); font-size:120%;"><code>
+    docker run -d --name some-ghost -e url=http://localhost:3001 -p 3001:2368 ghost
+	</code></pre>
+	После этого Ghost будет доступен по адресу <code style="background-color:rgb(240, 240, 240); font-size:120%;">server_ip:3001</code><br><br>
+	<img src="1.png"><br><br>
+	Панель администратора доступна по адресу <code style="background-color:rgb(240, 240, 240); font-size:120%;">server_ip:3001/ghost</code><br><br>
+	<img src="2.png">
+	</div>
+  </article>
+ </body>
+</html>
